@@ -1,0 +1,13 @@
+---
+output: pdf_document
+---
+
+# Basic Rmarkdown Syntax
+
+ 1. Italics -- _A phrase to italicized_
+ 2. Bold -- __A phrase to be written in bold__
+ 3. Strikethrough -- ~~A phrase to strikethrough~~
+ 4. Italics v2 -- *A phrase to italicized*
+ 5. Bold v2 -- **A phrase to be written in bold**
+ 6. Italic and Bold -- _**Italic and Bold font**_
+ 

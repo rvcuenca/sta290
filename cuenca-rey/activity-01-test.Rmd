@@ -1,0 +1,30 @@
+---
+output: pdf_document
+---
+
+# Basic Rmarkdown Syntax
+
+## Bold fonts
+
+Make the words “American Oxygen” bold:
+
+The music video for Rihanna’s song __American Oxygen__ depicts various moments from American history, including the inauguration of Barack Obama.
+
+## Italic fonts
+
+Make the word “six” italic:
+
+Why, sometimes I’ve believed as many as _six_ impossible things before breakfast.
+
+## Italic and Bold
+
+Make the whole sentence bold, and italicize the word “must”:
+
+__Everyone *must* attend the meeting at 5 o’clock today.__
+
+
+## Strike through
+
+Strikethrough all misspelled words:
+
+I have been ~~writng~~ my whole life and surely I have not made any ~~mstakes~~. Please ~~remmber~~ that I have majored English ~~wrting~~.
