@@ -1,0 +1,77 @@
+\documentclass{article} % article, beamer, book, etc.
+
+% setting margins and papersize
+\usepackage[
+paperwidth=8.5in,
+paperheight=11in,
+margin=1in
+]{geometry}
+
+\usepackage{hyperref} % allow pdf links (toc bookmarks)
+\usepackage{multicol} % allow multiple columns
+\setlength{\columnsep}{20pt} % set the column gap/separation width
+\usepackage{tgpagella} % setting global fonts
+\usepackage{booktabs}
+\usepackage[labelfont=bf]{caption}
+\usepackage{graphicx}
+
+% disable hyphenation of words
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+
+% inserting references/bibliography----START
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
+
+% inserting references/bibliography----END
+
+
+
+% Title, Author, Date
+\title{$mytitle$}
+\author{$myauthor$}
+\date{$mydate$}
+
+
+% Start of the actual document -----------------------------
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+$myabstract$ \\[10pt]
+\textbf{Keywords:} \textit{$mykeywords$}
+\end{abstract}
+
+\begin{multicols*}{2}
+$body$
+\end{multicols*}
+
+\end{document}

@@ -10,4 +10,4 @@ output: pdf_document
  4. Italics v2 -- *A phrase to italicized*
  5. Bold v2 -- **A phrase to be written in bold**
  6. Italic and Bold -- _**Italic and Bold font**_
- 
+

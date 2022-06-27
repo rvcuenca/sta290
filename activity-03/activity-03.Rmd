@@ -1,0 +1,74 @@
+---
+title: On the Analysis of Survey Data using R
+abstract: In this paper we are going to perform some basic statistical analysis of survey data using the free statistical tool R.
+author: Ivan L. Saligumba, PhD
+date: June 22, 2022
+output: pdf_document
+  # pdf_document:
+  #   toc: true
+---
+
+# Introduction
+
+
+# [Background of the Study](https://dplyr.tidyverse.org/reference/filter.html)
+
+
+# Data
+
+```{r include=FALSE}
+# list.files("./data-activity-03/")
+# install.packages("readxl")
+# install.packages("tidyverse")
+```
+
+
+```{r echo=FALSE}
+suppressMessages(
+  suppressWarnings(
+    library(tidyverse)
+    )
+  )
+```
+
+```{r eval=FALSE}
+library(tidyverse)
+```
+
+```{r}
+survey_dt <- readxl::read_xlsx("data-activity-03/Survey Data-bYHFix.xlsx", sheet = 1)
+survey_dt
+```
+
+```{r}
+survey_dt %>% 
+  select(Gender:GPA)
+```
+
+```{r}
+starwars %>% 
+  glimpse
+```
+
+
+```{r}
+filter(starwars, species == "Human")
+```
+
+```{r}
+starwars %>% 
+  # filter(sex == "male" & species == "Human")
+  filter(birth_year > 20 & hair_color == "brown") 
+```
+
+
+# Methodology
+
+
+# Results and Discussion
+
+
+# Conclusion
+
+
+# References

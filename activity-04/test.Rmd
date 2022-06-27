@@ -1,0 +1,10 @@
+---
+output: 
+  bookdown::pdf_document2:
+    template: my_template.tex
+title: TITLE
+abstract: This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract. This is an abstract.
+keywords: Keyword1, Keyword2
+---
+
+# Introduction

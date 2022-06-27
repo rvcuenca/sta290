@@ -1,0 +1,59 @@
+---
+output: pdf_document
+---
+
+# Basic Rmarkdown Syntax 2
+
+## Paragraph break
+
+Organize the following two sentences into two paragraphs:
+
+The sky above the port was the color of television, tuned to a dead channel. It was a bright cold day in April, and the clocks were striking thirteen.
+
+## Line breaks (new lines)
+
+Format this poem so the lines end exactly as shown below (in the script not the pdf output):
+
+I have eaten
+the plums
+that were in
+the icebox
+
+
+## Headings
+
+Make each chapter a level two heading:
+
+Chapter 1
+Something about the room made him uneasy.
+Chapter 2
+It's behind you! Hurry before it
+
+
+Make the first line a level 1 header, and the lines beginning with “Life” and “You” level 2 headers:
+
+After the Big Bang
+A brief summary of time
+Life on earth
+10 billion years
+You reading this
+13.7 billion years
+
+
+## Blockquotes
+
+Make this quote a proper blockquote -– be sure to remove the “” characters, too:
+
+The quote “Somewhere, something incredible is waiting to be known” has been ascribed to Carl Sagan.
+
+
+
+Format these quotes as one large blockquote:
+
+
+My favorite Miss Manners quotes:
+
+Allowing an unimportant mistake to pass without comment is a wonderful social grace.
+
+Ideological differences are no excuse for rudeness.
+

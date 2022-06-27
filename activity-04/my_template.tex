@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage[
+$if(paperwidth)$
+]{geometry}
+
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgpagella}
+\title{$title$}
+\author{$author$}
+\date{$date$}
+
+
+\begin{document}
+\maketitle
+
+$if(abstract)$
+\begin{abstract}
+$abstract$ \\[12pt]
+$if(keywords)$
+\textbf{\itshape Keywords:} $keywords$
+$endif$
+\end{abstract}
+$endif$
+
+
+$body$
+
+
+\end{document}

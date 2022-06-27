@@ -1,0 +1,152 @@
+---
+output: pdf_document
+---
+
+# Basic Rmarkdown Syntax 2
+
+## Paragraph break
+
+To create paragraph breaks just include empty lines.
+
+For example, consider creating two paragraphs from the following two-sentence paragraph:
+
+**Single paragraph**
+
+I am trying to create two paragraphs from a single one with two sentences. What I need to do is create a new empty line in between these two sentences.
+
+**Two paragraphs**
+
+I am trying to create two paragraphs from a single one with two sentences.
+
+What I need to do is create a new empty line in between these two sentences.
+
+## Line breaks (new lines)
+
+A line break is different from a paragraph break.
+
+The former results to no empty lines in between like what happens in the later.
+
+Consider the same example paragraph from the previous section but now we want to create a line break between the two sentences.
+
+**Single paragraph**
+
+I am trying to create two paragraphs from a single one with two sentences. What I need to do is create a new empty line in between these two sentences.
+
+**Single paragraph with line break**
+
+I am trying to create two paragraphs from a single one with two sentences.\
+What I need to do is create a new empty line in between these two sentences.
+
+*Note:* Please note that you should not put any character (including space) right after the slash symbol `\`. Otherwise, you can't form the line break.
+
+## Headings
+
+Starting a line with a hash \# and a space makes a header.
+
+The more #, the smaller the header.
+
+For heading level one, there is an alternate "underline" style using equals symbol `=` like the following:
+
+# Heading 1
+
+# Heading 1
+
+You can optionally add more \# at the end to close the header. You don't need to match the number of hastag symbols \# used at the beginning.
+
+For heading level two, there is an alternate "underline" style using dash symbols `-` like the following:
+
+## Heading 2
+
+## Heading 2
+
+There must be a space between the \# and the heading title.
+
+The title can also contain formatting like bold and italic.
+
+### *This is header level three*
+
+## Blockquotes
+
+To create a blockquote, start a line with greater than symbol `>` followed by an optional space.
+
+Blockquotes can be nested, and can also contain other formatting.
+
+To keep the quote together, blank lines inside the quote must contain the `>` character.
+
+The space between the `>` and the quoted text is optional.
+
+For example, we want to quote the verse from Acts 20:35 (KJV) as follows:
+
+> I have shewed you all things, how that so labouring ye ought to support the weak, and to remember the words of the Lord Jesus, how he said, It is more blessed to give than to receive.
+
+Suppose we want to italicized the entire quote:
+
+> *I have shewed you all things, how that so labouring ye ought to support the weak, and to remember the words of the Lord Jesus, how he said, It is more blessed to give than to receive.*
+
+Suppose we want to enclose it on quotations marks after italicizing:
+
+> *"I have shewed you all things, how that so labouring ye ought to support the weak, and to remember the words of the Lord Jesus, how he said, It is more blessed to give than to receive."*
+
+Suppose we want to, furthermore, add the reference at the end of the quote:
+
+> *"I have shewed you all things, how that so labouring ye ought to support the weak, and to remember  the words of the Lord Jesus, how he said, It is more blessed to give than to receive."* (Acts 20:35)
+
+This is another line 
+
+> *"I have shewed you all things, how that so labouring ye ought to support the weak, and to remember the words of the Lord Jesus, how he said, It is more blessed to give than to receive."* (Acts 20:35)
+
+## Lists
+
+Two types of lists:
+
+ 1. Numbered
+ 2. Unnumbered
+
+ + Numbered
+ + Unnumbered
+ 
+Some lines
+
+ * Numbered
+ * Unnumbered
+
+Some lines
+
+ - Numbered
+ - Unnumbered
+ 
+Using letters
+
+ a. Numbered
+ a. Unnumbered
+ a. Unnumbered
+ a. Unnumbered
+ a. Unnumbered
+ a. Unnumbered
+ 
+Using small Roman letters
+
+ i. Numbered
+ i. Unnumbered
+ i. Unnumbered
+ i. Unnumbered
+ i. Unnumbered
+ i. Unnumbered
+ 
+Nesting of list
+
+ 1. Numbered
+    - sub-item
+    - sub-item
+    - sub-item
+ 2. Unnumbered
+    - sub-item
+    - sub-item
+       - subsub-item
+          - subsub-item
+              - subsubsub-item
+              - subsubsub-item
+              - subsubsub-item
+          - subsub-item
+       - subsub-item
+    b. sub-item
