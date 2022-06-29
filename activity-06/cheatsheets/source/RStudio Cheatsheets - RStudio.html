@@ -1,0 +1,2826 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20375833-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-20375833-3');
+  </script>
+
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TLQTK9R');</script>
+  
+
+  
+<script src="https://client-registry.mutinycdn.com/personalize/client/013e765e14ebf565.js"></script>
+
+  
+  
+  
+  
+  <meta class="swiftype" name="subject" data-type="string" content="cheatsheet">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="reticulate">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="forcats">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="rlang">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="keras">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="lubridate">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="stringr">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="purrr">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="readr">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="dplyr">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="sparklyr">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="rmarkdown">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="RStudio IDE">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="shiny">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="ggplot2">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="devtools">
+  
+  <meta class="swiftype" name="subject" data-type="string" content="plumber">
+  
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#75aadb">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <title>RStudio Cheatsheets - RStudio</title>
+  <meta name="description" content="">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+  
+  <link rel="preload" href="/assets/img/icon-rstudio.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-rstudio-white.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-shiny.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-shiny-white.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-packages.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-packages-white.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-rspm.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-rspm-white.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-connect.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-connect-white.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-rstudio-team.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-rstudio-team-white.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-cloud.svg" as="image">
+  <link rel="preload" href="/assets/img/icon-cloud-white.svg" as="image">
+
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" integrity="sha384-VY3F8aCQDLImi4L+tPX4XjtiJwXDwwyXNbkH7SHts0Jlo85t1R15MlXVBKLNx+dj" crossorigin="anonymous">
+  
+  <link href='https://d33wubrfki0l68.cloudfront.net/bundles/ca3ce3888559ffeb1e157a0560000875040e4d65.css' rel='stylesheet'/>
+    
+  
+  
+  
+  
+  
+
+  
+  <meta property="og:image" content="https://rstudio.com/assets/img/og/rstudio-og-fb-1.jpg" />
+  
+
+  
+
+
+
+  <meta property="og:title" content="RStudio Cheatsheets" />
+  <meta property="og:description" content="Open source and enterprise-ready professional software for data science" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.rstudio.com/resources/cheatsheets/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://www.rstudio.com/assets/img/og/rstudio-og-fb-1.jpg"/>
+  
+  <meta name="twitter:title" content="RStudio Cheatsheets"/>
+  <meta name="twitter:description" content="Open source and enterprise-ready professional software for data science"/>
+  
+  
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link href='https://d33wubrfki0l68.cloudfront.net/css/4a0f49009a213e6e2207c6f66893f0e0045dd0f3/assets/css/bootstrap-lightbox.css' rel='stylesheet' type='text/css'/>
+    
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+
+  <meta name="generator" content="Hugo 0.64.1" />
+  <title>RStudio Cheatsheets &middot; RStudio</title>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  
+  
+  
+  
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://metadata-static-files.sfo2.cdn.digitaloceanspaces.com/pixel/lp.js";
+    s.onload = function() {
+      window.Metadata.pixel.init();
+    };
+    document.head.appendChild(s);
+  })();
+  </script>
+  
+  <script type="text/javascript">
+  _linkedin_partner_id = "218281";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+  (function() {
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript";
+    b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);
+  })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=218281&fmt=gif" />
+  </noscript>
+  
+  <script id="metadata_facebook_pixel_124">
+  ! function(f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function() {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window,
+    document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '151855192184380');
+  fbq('track', 'Lead');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=151855192184380&ev=PageView&noscript=1" /></noscript>
+  
+  <script type="text/javascript">
+  (function() {
+    var didInit = false;
+
+    function initMunchkin() {
+      if (didInit === false) {
+        didInit = true;
+        Munchkin.init('709-NXN-706');
+      }
+    }
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//munchkin.marketo.net/munchkin-beta.js';
+    s.onreadystatechange = function() {
+      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+        initMunchkin();
+      }
+    };
+    s.onload = initMunchkin;
+    document.getElementsByTagName('head')[0].appendChild(s);
+  })();
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://www.rstudio.com/assets/css/custom.css">
+  
+  <script id="metadata_pixel_124">
+  ! function() {
+    function e(e) { var t = new XMLHttpRequest; return t.open("POST", n + "insight"), t.setRequestHeader("Content-Type", "application/json"), t.send(JSON.stringify(e)) }
+
+    function t(t) { var n = function(e) { e = e.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]"); var t = new RegExp("[\\?&]" + e + "=([^&#]*)").exec(location.search); return null === t ? "" : decodeURIComponent(t[1].replace(/\+/g, " ")) }("cid"),
+        r = window.location.href,
+        i = document.querySelectorAll("input[id],select[id]"),
+        p = {}; return Array.prototype.forEach.call(i, function(e) { p[e.id] = e.value }), e({ cid: n, sfv: p, lpu: r, ip: o }).then(function() { t.submit() }) } var n = "https://platformapi.metadata.io/",
+      o = "",
+      r = new XMLHttpRequest;
+    r.open("GET", n + "tracking/ip"), r.onload = function() { 200 === r.status && (o = r.responseText) }, r.send(), document.addEventListener("DOMContentLoaded", function() { setTimeout(function() { if (window.lp && window.lp.jQuery && window.lp.jQuery(".lp-pom-form .lp-pom-button").length) { var e = function(e, n) { e.preventDefault(); try { t().then(function() { lp.jQuery(".lp-pom-form form").submit() }) } catch (e) { lp.jQuery(".lp-pom-form form").submit() } };
+          lp.jQuery(function(t) { t(".lp-pom-form .lp-pom-button").unbind("click tap touchstart").bind("click.formSubmit", function(n) { t(".lp-pom-form form").valid() && e(n) }), t("form").unbind("keypress").bind("keypress.formSubmit", function(n) { 13 === n.which && "textarea" !== n.target.nodeName.toLowerCase() && t(".lp-pom-form form").valid() && e(n) }) }) } else { var n = document.querySelectorAll("form");
+          Array.prototype.forEach.call(n, function(e) { e.addEventListener("submit", t.bind(e), !1) }) } }, 3e3) }, !1) }();
+  </script>
+  
+
+  
+
+<script>
+  ga(function(){
+    ga_trackers=[];
+    ga.getAll().forEach(function(x,i){
+    ga_trackers.push(x.get('name'))});
+    ga_trackers.forEach(
+    function(gaName){
+      ga(gaName + '.require', 'Clearbit', {"mapping":{
+          "companyName": "dimension5",
+          "companyDomain": "dimension6",
+          "companyTags": "dimension7",
+          "companySector": "dimension8",
+          "companyIndustryGroup": "dimension9",
+          "companyIndustry": "dimension10",
+          "companySubIndustry": "dimension11",
+          "companyType": "dimension12",
+          "companyEmployeesRange": "dimension13",
+          "companyAlexaRank": "dimension14",
+          "companyCity": "dimension15",
+          "companyState": "dimension16",
+          "companyCountry": "dimension17",
+          "companyFunding": "dimension18",
+          "companyTech": "dimension19"
+        }
+      });
+    });
+  });
+</script>
+<script async src="https://ga.clearbit.com/v1/ga.js?authorization=pk_60c5aa2221e3c03eca10fb6876aa6df7"></script>
+
+  
+  <script>
+  !function(w){var clearbit=w.clearbit=w.clearbit||[];if(!clearbit.initialize)if(clearbit.invoked)w.console&&console.error&&console.error("Clearbit snippet included twice.");else{clearbit.invoked=!0;clearbit.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];clearbit.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);clearbit.push(e);return clearbit}};for(var t=0;t<clearbit.methods.length;t++){var e=clearbit.methods[t];clearbit[e]=clearbit.factory(e)}clearbit.load=function(t){var e=document.createElement("script");e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"x.clearbitjs.com/v1/"+t+"/clearbit.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};clearbit.SNIPPET_VERSION="3.1.0";
+   clearbit.load("pk_60c5aa2221e3c03eca10fb6876aa6df7");
+   clearbit.page();
+ }}(window);
+  </script>
+
+  
+  <script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+  analytics.load("5QCLCHLemBoSmOxysWvjrcIAEZWwdFhf");
+  analytics.page();
+  }}();
+</script>
+
+
+  
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("gO0uTGfCkO4DQpfkRim9mBsjdKrehtnu");
+    analytics.page();
+    }}();
+  </script>
+  
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1446157,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  
+  <script type='text/javascript'>
+  window._vwo_code = window._vwo_code || (function() {
+    var account_id = 450622,
+      settings_tolerance = 2000,
+      library_tolerance = 2500,
+      use_existing_jquery = false,
+      is_spa = 1,
+      hide_element = 'body',
+       
+      f = false,
+      d = document,
+      code = {
+        use_existing_jquery: function() { return use_existing_jquery; },
+        library_tolerance: function() { return library_tolerance; },
+        finish: function() { if (!f) { f = true; var a = d.getElementById('_vis_opt_path_hides'); if (a) a.parentNode.removeChild(a); } },
+        finished: function() { return f; },
+        load: function(a) { var b = d.createElement('script');
+          b.src = a;
+          b.type = 'text/javascript';
+          b.innerText;
+          b.onerror = function() { _vwo_code.finish(); };
+          d.getElementsByTagName('head')[0].appendChild(b); },
+        init: function() {
+          window.settings_timer = setTimeout('_vwo_code.finish()', settings_tolerance);
+          var a = d.createElement('style'),
+            b = hide_element ? hide_element + '{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}' : '',
+            h = d.getElementsByTagName('head')[0];
+          a.setAttribute('id', '_vis_opt_path_hides');
+          a.setAttribute('type', 'text/css');
+          if (a.styleSheet) a.styleSheet.cssText = b;
+          else a.appendChild(d.createTextNode(b));
+          h.appendChild(a);
+          this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&f=' + (+is_spa) + '&r=' + Math.random());
+          return settings_timer;
+        }
+      };
+    window._vwo_settings_timer = code.init();
+    return code;
+  }());
+  </script>
+  
+
+  <link rel="alternate" type="application/atom+xml" title="Blog" href="https://www.rstudio.com/blog/index.xml" />
+
+  
+  
+  
+  <script>
+!function(){window.analytics||(window.analytics=[]),window.analytics.methods=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group","on","once","off"],window.analytics.factory=function(a){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(a),window.analytics.push(t),window.analytics}};for(var a=0;a<window.analytics.methods.length;a++){var t=window.analytics.methods[a];window.analytics[t]=window.analytics.factory(t)}analytics.load=function(a){if(!document.getElementById("dreamdata-analytics")){window.a=window.analytics;var t=document.createElement("script");t.async=!0,t.id="dreamdata-analytics",t.type="text/javascript",t.src="https://cdn.dreamdata.cloud/scripts/analytics/v1/dreamdata.min.js";var n=function(){if(analytics&&analytics.initialize)for(analytics.initialize({"Dreamdata.io":{apiKey:a}});window.a.length>0;){var t=window.a.shift(),n=t.shift();analytics[n]&&analytics[n].apply(analytics,t)}};t.addEventListener?t.addEventListener("load",function(){n()},!1):t.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||n()};var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(t,i)}},analytics.load("fb7d8208-7386-4584-87de-7b4d3a64fa70"),analytics.page()}();
+</script>
+</head>
+
+    
+	<body class="blank-page rs-product-page sidebar-collapse">
+    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLQTK9R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+    
+  <div class="st-search-container search-form-wrapper">
+    <form>
+      <input type="text" class="d-inline st-default-search-input mx-auto" id="searchInputText" placeholder="Type here to search..." />
+      <div class="d-inline search-bar__exit">
+        <a data-toggle="searchFormClose" href="#swiftypeSearchContainer" role="button" aria-expanded="false" aria-controls="swiftypeSearchContainer">
+          <i class="now-ui-icons ui-1_simple-remove"></i>
+        </a>
+      </div>
+    </form>
+  </div>
+   
+  <div class="alert" id="alert-conf" role="alert" style="margin-bottom: 0px;padding: 5px;background-color:#000000;">
+    <div class="desktop container pt-0 pb-0" style="line-height: 16px;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="d-inline">
+            <a style="color: #ffffff;font-size: .9em;" href="/conference">
+              <b>Join us at rstudio::conf(2022) to sharpen your R skills.</b>
+              <span class="mx-2"> | </span>July 25-28th in D.C.
+            </a>
+          </p>
+          <p class="d-inline">
+            <a class="pt-1 pb-1 ml-4 btn btn-white btn-sm text-center" href="/conference"> Learn More</a>
+          </p>
+          <button onclick="localStorage.setItem('alert-conf',false)" type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">
+              <i style="line-height:48px;padding-right: 5px;" class="now-ui-icons ui-1_simple-remove"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile container pl-0 pr-2 pt-2 pb-2" style="line-height: 16px;">
+      <div class="row ml-3">
+        <div class="col-md-12 p-0">
+          <p class="d-inline pl-0 pr-3">
+            <a style="color: #ffffff;font-size: .9em;" class="text-white" href="/conference"><b>rstudio::conf(2022)</b>
+              <span class="mx-1">|</span>
+              <span class="mobile-big">July 25-28th in D.C.</span>
+              <span class="mobile-small">7/25 - 7/28 in D.C.</span>
+            </a>
+          </p> 
+          <style type="text/css">
+
+          @media only screen and (max-width: 580px) {
+            .margin-right-max-580 {
+              margin-right: 4.2em;
+            }
+          }
+          </style>
+          <a class="d-inline btn btn-sm btn-white pt-1 pb-1 pl-2 pr-2 margin-right-max-580" style="line-height:44px;color: #ffffff;font-size: .6em;font-weight: 400;white-space: nowrap;" href="/conference">Learn More</a>
+          <button onclick="localStorage.setItem('alert-rr',false)" type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">
+              <i style="font-size: 15px;line-height:40px;padding-left:20px;padding-right: 14px;" class="now-ui-icons ui-1_simple-remove"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<nav class="navbar navbar-expand-lg bg-white fixed-top position-absolute navbar-transparent navbar-white" color-on-scroll="40000">
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="/" rel="tooltip" data-placement="bottom">
+        <img border="0" alt="RStudio, PBC logo" src="https://www.rstudio.com/assets/img/logo.svg" width="130" height="auto">
+      </a>
+      <div class="navbar-right-mobile">
+        <span id="rs-search-button-mobile"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-bar top-bar"></span>
+        <span class="navbar-toggler-bar middle-bar"></span>
+        <span class="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="desktop">
+      <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3" id="navbarCollapse">
+        <ul class="navbar-nav submain flex-row ml-auto">
+          <li class="nav-item navbar-white">
+            <a class="nav-link" href="/products/rstudio/download/">
+              <span>Download</span>
+            </a>
+          </li>
+          <li class="nav-item navbar-white">
+            <a class="nav-link" href="/support/">
+              <span>Support</span>
+            </a>
+          </li>
+          <li class="nav-item navbar-white">
+            <a class="nav-link" href="https://docs.rstudio.com/" target="_blank" rel="noopener noreferrer">
+              <span>Docs</span>
+            </a>
+          </li>
+          <li class="nav-item navbar-white">
+            <a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://community.rstudio.com/">
+              <span>Community</span>
+            </a>
+          </li>
+          <li class="pl-2" style="margin-top:-1px">
+            <div id="rs-search-button"></div>
+          </li>
+        </ul>
+        <div class="flex-row ml-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown megamenu desktop-dropdown-hover">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+                <span>Products</span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu desktop-dropdown-menu-hover" aria-labelledby="navbarDropdownMenuLink1">
+                <div class="collapse navbar-collapse justify-content-end" data-nav-image="/img/blurred-image-1.jpg">
+                  <ul class="navbar-nav  ml-auto">
+                    
+                    
+                    <li class="nav-item dropdown">
+                      <span class="bucket-header" style="padding-left: 20px;">
+                         <span>Open Source</span><br>
+                        <span class="megamenu-subtitle">Get started with R</span>
+                      </span>
+                      <div style="padding-top: 18px;margin-right: 5px;" aria-labelledby="navbarDropdownMenuLink1">
+                        
+                        <a class="dropdown-item" href="/products/rstudio/" >
+                          <i class='icon rstudio-icon'></i>
+                          <span>RStudio</span><br>
+                          <span class="megamenu-sublink">
+                            <p>The premier IDE for R</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/rstudio/#rstudio-server" >
+                          <i class='icon rstudio-icon'></i>
+                          <span>RStudio Server</span><br>
+                          <span class="megamenu-sublink">
+                            <p>RStudio anywhere using a web browser</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/shiny/shiny-server/" >
+                          <i class='icon shiny-icon'></i>
+                          <span>Shiny Server</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Put Shiny applications online</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/rpackages/" >
+                          <i class='icon packages-icon'></i>
+                          <span>R Packages</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Shiny, R Markdown, Tidyverse and more</p>
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item dropdown">
+                      <span class="bucket-header" style="padding-left: 20px;">
+                         <span>Hosted Services</span><br>
+                        <span class="megamenu-subtitle">Be our guest, be our guest</span>
+                      </span>
+                      <div style="padding-top: 18px;margin-right: 5px;" aria-labelledby="navbarDropdownMenuLink1">
+                        
+                        <a class="dropdown-item" href="/academy/" >
+                          <i class='icon academy-icon'></i>
+                          <span>RStudio Academy</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Next level training for you and your team</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/cloud/" >
+                          <i class='icon cloud-icon'></i>
+                          <span>RStudio Cloud</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Do, share, teach and learn data science</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="https://packagemanager.rstudio.com/" >
+                          <i class='icon rspm-icon'></i>
+                          <span>RStudio Public Package Manager</span><br>
+                          <span class="megamenu-sublink">
+                            <p>An easy way to access R packages</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/shinyapps/" >
+                          <i class='icon shiny-icon'></i>
+                          <span>shinyapps.io</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Let us host your Shiny applications</p>
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item dropdown">
+                      <span class="bucket-header" style="padding-left: 20px;">
+                         <span>Professional</span><br>
+                        <span class="megamenu-subtitle">Enterprise-ready</span>
+                      </span>
+                      <div style="padding-top: 18px;margin-right: 5px;" aria-labelledby="navbarDropdownMenuLink1">
+                        
+                        <a class="dropdown-item" href="/products/team/" >
+                          <i class='icon rstudioteamicon'></i>
+                          <span>RStudio Team</span><br>
+                          <span class="megamenu-sublink">
+                            <p>A single home for R & Python Data Science Teams</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/workbench/" >
+                          <i class='icon rstudio-icon'></i>
+                          <span>RStudio Workbench</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Scale, develop, and collaborate across R & Python</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/connect/" >
+                          <i class='icon connect-icon'></i>
+                          <span>RStudio Connect</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Easily share your insights</p>
+                          </span>
+                        </a>
+                        
+                        <a class="dropdown-item" href="/products/package-manager/" >
+                          <i class='icon rspm-icon'></i>
+                          <span>RStudio Package Manager</span><br>
+                          <span class="megamenu-sublink">
+                            <p>Control and distribute packages</p>
+                          </span>
+                        </a>
+                        
+                      </div>
+                    </li>
+                    
+                    
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            
+            
+            <li class="nav-item dropdown desktop-dropdown-hover">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2solutions" data-toggle="dropdown">
+                 <span>Solutions</span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right desktop-dropdown-menu-hover" aria-labelledby="navbarDropdownMenuLink2solutions">
+                
+                <a class="dropdown-item" href="/solutions/r-and-python/" >
+                  
+                  <span>R &amp; Python</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/rstudio-in-insurance/" >
+                  
+                  <span>RStudio in Insurance</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/pharma" >
+                  
+                  <span>RStudio in Life Sciences</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/financial-services" >
+                  
+                  <span>RStudio in Financial Services</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/serious-data-science/" >
+                  
+                  <span>Serious Data Science</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/bi-and-data-science/" >
+                  
+                  <span>BI and Data Science</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/interoperability/" >
+                  
+                  <span>Interoperability</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/solutions/rstudio-in-the-cloud/" >
+                  
+                  <span>RStudio in the Cloud</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item navbar-white">
+              <a class="nav-link" href="/about/customer-stories/" >
+                
+                <span>Customers</span>
+              </a>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown desktop-dropdown-hover">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2resources" data-toggle="dropdown">
+                 <span>Resources</span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right desktop-dropdown-menu-hover" aria-labelledby="navbarDropdownMenuLink2resources">
+                
+                <a class="dropdown-item" href="/resources/" >
+                  
+                  <span>Webinars &amp; Videos</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/champion/" >
+                  
+                  <span>Champion</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/data-science-hangout/" >
+                  
+                  <span>Data Science Hangout</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/resources/cheatsheets/" >
+                  
+                  <span>Cheatsheets</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/resources/books" >
+                  
+                  <span>Books</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="https://education.rstudio.com/" >
+                  
+                  <span>Education</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/certified-partners" >
+                  
+                  <span>Certified Partners</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/workshops/" >
+                  
+                  <span>In-Person Workshops</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="http://docs.rstudio.com" >
+                  
+                  <span>RStudio Documentation</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/blog/" >
+                  
+                  <span>RStudio Blog</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="https://rviews.rstudio.com/" >
+                  
+                  <span>R Views Blog</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="https://blogs.rstudio.com/tensorflow/" >
+                  
+                  <span>AI Blog</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="https://www.tidyverse.org/articles/" >
+                  
+                  <span>Tidyverse Blog</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown desktop-dropdown-hover">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink2about" data-toggle="dropdown">
+                 <span>About</span>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right desktop-dropdown-menu-hover" aria-labelledby="navbarDropdownMenuLink2about">
+                
+                <a class="dropdown-item" href="/about" >
+                  
+                  <span>About RStudio</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/about/what-makes-rstudio-different/" >
+                  
+                  <span>What Makes RStudio Different</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/conference" >
+                  
+                  <span>rstudio::conf(2022)</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/about/careers" >
+                  
+                  <span>Careers</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="/about/analyst-reports/" >
+                  
+                  <span>Analyst Reports</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+                <a class="dropdown-item" href="https://swag.rstudio.com/" >
+                  
+                  <span>Swag</span><br>
+                  <span class="menu-sublink"></span>
+                </a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item navbar-white">
+              <a class="nav-link" href="/pricing/" >
+                
+                <span>Pricing</span>
+              </a>
+            </li>
+            
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mobile mobile-menu">
+      <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3 pt-3" id="navbarCollapse" style="overflow: auto;">
+        <div id="accordion1" role="tablist" aria-multiselectable="true" class="card-collapse">
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a class="collapsed mobile-menu-parent-anchor" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Products
+                <i class="now-ui-icons arrows-1_minimal-down"></i>
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+              <div class="card-body">
+                <div id="products">
+                  <div class="card card-plain pt-2">
+                    <div class="card-header mobile-menu-child-1" role="tab">
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapseOpenSource" aria-expanded="false" aria-controls="collapseOpenSource">
+                        Open Source
+                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                      </a>
+                    </div>
+                    <div id="collapseOpenSource" class="collapse" aria-labelledby="headingOpenSource" data-parent="#products">
+                      <div class="mobile-menu-child-2 card-body">
+                        <a href="/products/rstudio/"><i class="icon rstudio-icon-white mobile-icon"></i><p>RStudio</p></a>
+                        <a href="/products/rstudio/#rstudio-server"><i class="icon rstudio-icon-white mobile-icon"></i><p>RStudio Server</p></a>
+                        <a href="/products/shiny/shiny-server/"><i class="icon shiny-icon-white mobile-icon"></i><p>Shiny Server</p></a>
+                        <a href="/products/rpackages/"><i class="icon packages-icon-white mobile-icon"></i><p>R Packages</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-plain">
+                    <div class="card-header mobile-menu-child-1" role="tab">
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapsehosted" aria-expanded="false" aria-controls="collapsehosted">
+                        Hosted Services
+                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                      </a>
+                    </div>
+                    <div id="collapsehosted" class="collapse" aria-labelledby="headinghosted" data-parent="#products">
+                      <div class="mobile-menu-child-2 card-body">
+                        <a href="/academy/"><i class="icon academy-icon-white mobile-icon"></i><p>RStudio Academy</p></a>
+                        <a href="/products/cloud/"><i class="icon cloud-icon-white mobile-icon"></i><p>RStudio Cloud</p></a>
+                        <a target="_blank" rel="noopener noreferrer"  href="https://packagemanager.rstudio.com/"><i class="icon rspm-icon-white mobile-icon"></i><p>RStudio Public Package Manager</p></a>
+                        <a href="/products/shinyapps/"><i class="icon shiny-icon-white mobile-icon"></i><p>shinyapps.io</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card card-plain">
+                    <div class="card-header mobile-menu-child-1" role="tab">
+                      <a class="collapsed" data-toggle="collapse" data-target="#collapseprofessional" aria-expanded="false" aria-controls="collapseprofessional">
+                        Professional
+                        <i class="now-ui-icons arrows-1_minimal-down"></i>
+                      </a>
+                    </div>
+                    <div id="collapseprofessional" class="collapse" aria-labelledby="headingprofessional" data-parent="#products">
+                      <div class="mobile-menu-child-2 card-body">
+                        <a href="/products/team"><i class="icon rstudioteamicon-white mobile-icon"></i><p>RStudio Team</p></a>
+                        <a href="/products/workbench"><i class="icon rstudio-icon-white mobile-icon"></i><p>RStudio Workbench</p></a>
+                        <a href="/products/connect"><i class="icon connect-icon-white mobile-icon"></i><p>RStudio Connect</p></a>
+                        <a href="/products/package-manager"><i class="icon rspm-icon-white mobile-icon"></i><p>RStudio Package Manager</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a class="collapsed mobile-menu-parent-anchor" data-toggle="collapse" data-target="#collapseSolutions" aria-expanded="false" aria-controls="collapseSolutions">
+                Solutions
+                <i class="now-ui-icons arrows-1_minimal-down"></i>
+              </a>
+            </div>
+            <div id="collapseSolutions" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+              <div class="mobile-menu-child-2 card-body">
+                <a href="/solutions/r-and-python/">R & Python</a>
+                <a href="/solutions/insurance">RStudio in Insurance</a>
+                <a href="/solutions/pharma/">RStudio in Life Sciences</a>
+                <a href="/solutions/financial-services/">RStudio in Financial Services</a>
+                <a href="/solutions/serious-data-science/">Serious Data Science</a>
+                <a href="/solutions/bi-and-data-science/">BI and Data Science</a>
+                <a href="/solutions/interoperability/">Interoperability</a>
+                <a href="/solutions/rstudio-in-the-cloud/">RStudio in the Cloud</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a href="/about/customer-stories/">
+                Customers
+              </a>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a class="collapsed mobile-menu-parent-anchor" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Resources
+                <i class="now-ui-icons arrows-1_minimal-down"></i>
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+              <div class="mobile-menu-child-2 card-body">
+                <a href="/resources/">Webinars & Videos</a>
+                <a href="/data-science-hangout/">Data Science Hangout</a>
+                <a href="/resources/cheatsheets/">Cheatsheets</a>
+                <a href="/resources/books">Books</a>
+                <a href="http://education.rstudio.com/">Education</a>
+                <a href="/certified-partners">Certified Partners</a>
+                <a href="/workshops/">In-Person Workshops</a>
+                <a href="http://docs.rstudio.com/">RStudio Documentation</a>
+                <a href="/blog/">RStudio Blog</a>
+                <a href="https://rviews.rstudio.com/">R Views Blog</a>
+                <a href="https://blogs.rstudio.com/ai/">AI Blog</a>
+                <a href="https://www.tidyverse.org/articles/">Tidyverse Blog</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a href="/pricing/">
+                Pricing
+              </a>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a class="collapsed mobile-menu-parent-anchor" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">
+                About
+                <i class="now-ui-icons arrows-1_minimal-down"></i>
+              </a>
+            </div>
+            <div id="collapseAbout" class="collapse" aria-labelledby="headingAbout" data-parent="#accordion1">
+              <div class="mobile-menu-child-2 card-body">
+                <a href="/about">About RStudio</a>
+                <a href="/conference">rstudio::conf</a>
+                <a href="/about/careers">Careers</a>
+                <a href="/about/analyst-reports/">Analyst Reports</a>
+                <a href="https://swag.rstudio.com/">Swag</a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a href="/support/">
+                Support
+              </a>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a class="no-icon" target="_blank" rel="noreferrer noopener" href="https://community.rstudio.com/">
+                Community
+              </a>
+            </div>
+          </div>
+          <div class="card card-plain">
+            <div class="card-header" role="tab">
+              <a class="no-icon" target="_blank" rel="noreferrer noopener" href="https://docs.rstudio.com/">
+                Docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+  
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','t2KJMr9_77QjXsTW-NMw','2.0.0');
+</script>
+
+<script type="text/javascript">
+  if  (localStorage.getItem('alert-conf')!== null){
+    document.getElementById('alert-conf').style.display="none";
+  }
+</script>
+    
+    <div class="wrapper">
+      <div class="none  none" filter-color="blue">
+        <div class="header-overlay"></div>
+        <div class="page-header-image" data-parallax="true" style="background-image: url('https://www.rstudio.com/assets/img/clearpixel.png'); background-position: center center; background-color: #999999;">
+        </div>
+          
+          
+<div class="container">
+  <div class="content-center">
+    <h1 style="display:none" class="title">RStudio Cheatsheets</h1>
+    <div>
+    	<div style="display:block"></div>
+      
+    </div>
+  </div>
+</div>
+
+            
+      </div>
+      <div class="section">
+        <div class="container">
+              
+          
+<div class="row">
+  <div class="col-md-12 ml-auto mr-auto text-left">
+  </div>
+<div class="col-md-11 mx-auto">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="h1 mt-0">RStudio Cheatsheets</h1>
+    </div>
+    <div class="col-lg-7 col-12 pb-5">
+      <div class="lead-copy">
+        <p class="pb-2">The cheatsheets below make it easy to use some of our favorite packages. From time to time, we will add new cheatsheets. If you’d like us to drop you an email when we do, click the button below.</p>
+        <style type="text/css">
+  @media only screen and (max-width: 480px) {
+    .mktoFormCol {
+      width: 100% !important;
+    }
+
+    .mktoFieldWrap {
+      padding-right: 0 !important;
+    }
+
+    .mktoForm .mktoFieldWrap {
+      padding-top: 10px !important;
+    }
+
+    .mktoForm,
+    .mktoForm * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      padding: 0px !important;
+    }
+
+    .mktoFormCol {
+      padding: 0px !important;
+    }
+
+    .mktoAsterix {
+      padding-right: 6px !important;
+    }
+
+    .mktoForm select.mktoField {
+      font-size: 14px !important;
+    }
+
+    .mktoForm textarea.mktoField {
+      height: 5em !important;
+    }
+  }
+
+.mktoCheckboxList input {
+  opacity: 1;
+  position: absolute;
+}
+
+.mktoCheckboxList input {
+  font-size: 14px !important;
+}
+
+.mktoCheckboxList label {
+  font-size: 14px;
+}
+
+
+.mktoCheckboxList label {
+  position: relative;
+}
+input:focus {
+  border: 1px solid #4D8DC9 !important;
+}
+  .mktoButtonRow {
+    padding-top: 20px !important;
+  }
+
+
+  body .mktoForm .mktoCheckboxList>label {
+    margin-left: 0;
+  }
+
+
+  .mktoForm input[type=text],
+  .mktoForm input[type=url],
+  .mktoForm input[type=email],
+  .mktoForm input[type=tel],
+  .mktoForm input[type=number],
+  .mktoForm input[type=date],
+  .mktoForm input[type=tel],
+  select {
+    height: 40px !important;
+  }
+
+  input {
+    border: 1px solid #d2d2d2;
+  }
+
+  .mktoForm .mktoRequiredField label.mktoLabel {
+    font-weight: 400 !important;
+  }
+
+  label {
+    margin-bottom: 8px !important;
+  }
+
+  .mktoForm fieldset legend {
+    margin: 0 0 0.5em 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .mktoForm .mktoLabel {
+    padding-top: 0.5em;
+  }
+
+  .mktoFormRow>.mktoFieldDescriptor.mktoFormCol>.mktoFieldWrap.mktoRequiredField>textarea {
+    width: 100% !important;
+  }
+
+  fieldset.mktoFormCol {
+    width: 100% !important;
+  }
+
+  .mktoForm {
+    width: 100% !important;
+  }
+
+  .mktoFormRow,
+  .mktoFieldWrap,
+  .mktoButtonRow {
+    width: 100%;
+  }
+
+  .mktoForm input[type=url],
+  .mktoForm input[type=text],
+  .mktoForm input[type=date],
+  .mktoForm input[type=tel],
+  .mktoForm input[type=email],
+  .mktoForm input[type=number],
+  .mktoForm textarea.mktoField,
+  .mktoForm select.mktoField {
+    width: 100% !important;
+  }
+
+  .mktoFieldWrap {
+    padding-right: 10px !important;
+    box-sizing: border-box;
+  }
+
+  .mktoFormCol:nth-child(even) .mktoFieldWrap {
+    padding-right: 0 !important;
+  }
+
+  .mktoButton:hover {
+    background-color: #ffffff !important;
+    color: #5a9ddb !important;
+    border: 1px solid #5a9ddb !important;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .mktoButton {
+    background-color: #5a9ddb !important;
+    background-image: none !important;
+    border: 1px solid #5a9ddb !important;
+    color: #fff !important;
+    width: 200px !important;
+    margin-bottom: 7px;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    height: 45px;
+    font-family: "Source Sans Pro", Arial, Helvetica, sans-serif !important;
+  }
+
+  .mktoButtonWrap {
+    margin-left: 0 !important;
+  }
+
+
+</style>
+  <a href="/about/subscription-management/" class="btn btn-primary" data-toggle="modal" data-target="#cheatsheets" >Subscribe to cheatsheet updates</a>
+</div>
+</div>
+<div class="modal fade" id="cheatsheets" tabindex="-1" role="dialog" aria-labelledby="cheatsheetsLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header justify-content-center">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+      <i class="now-ui-icons ui-1_simple-remove"></i>
+      </button>
+    </div>
+    <div>
+      <h3 class="mt-0 pl-5">Receive Cheatsheet Updates</h3>
+    </div>
+    <div class="modal-body pl-5 pr-5 pb-5">
+      <script src="//pages.rstudio.net/js/forms2/js/forms2.min.js"></script>
+    <form id="mktoForm_1372"></form>
+    <script>MktoForms2.loadForm("//pages.rstudio.net", "709-NXN-706", 1372);</script>
+  </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-1 offset-lg-1 col-lg-4 col-12 align-self-start sidebar">
+    <nav>
+      <ul class="navbar-nav ml-auto sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link sidebar-nav link-one scrolling-anchor-link" href="#contributed-cheatsheets">
+            <i class="now-ui-icons files_single-copy-04"></i>
+            <p class="nav-link sidebar-nav">Contributed Cheatsheets</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sidebar-nav scrolling-anchor-link" href="#translations">
+            <i class="now-ui-icons location_map-big"></i>
+            <p class="nav-link sidebar-nav">Translations</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link sidebar-nav" href="https://github.com/rstudio/cheatsheets/blob/master/.github/CONTRIBUTING.md">
+            <i class="now-ui-icons ui-1_simple-add"></i>
+            <p class="nav-link sidebar-nav">How to Contribute</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="col-md-12">
+    <hr class="desktop mt-3">
+  </div>
+</div>
+<div class="row mt-3 pt-1">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Data visualization with ggplot2 cheatsheet </h2>
+<p>The <a href="https://ggplot2.tidyverse.org/">ggplot2</a> package lets you make beautiful and customizable plots of your data. It implements the grammar of graphics, an easy to use system for building plots. Updated August 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/data-visualization.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Data transformation with dplyr cheatsheet </h2>
+<p>The <a href="https://dplyr.tidyverse.org/">dplyr</a> package provides a grammar for manipulating tables in R. This cheatsheet will guide you through the grammar, reminding you how to select, filter, arrange, mutate, summarise, group, and join data frames and tibbles. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-transformation.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/data-transformation.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Data tidying with tidyr cheatsheet </h2>
+<p>The <a href="https://tidyr.tidyverse.org/">tidyr</a> package provides a framework for creating and shaping tidy data, the data format that works the most seamlessly with R and the <a href="https://www.tidyverse.org/">tidyverse</a>. The front page of this cheatsheet provides an overview of tibbles and reshaping tidy data. The back page provides an overview of creating, reshaping, and transforming nested data and list-columns with tidyr, tibble, and dplyr. With list-columns, you can use a simple data frame to organize any collection of objects in R. Updated August 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tidyr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tidyr.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/tidyr.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Data import with readr, readxl, and googlesheets4 cheatsheet </h2>
+<p>The tidyverse provides several packages for importing data into R and this cheatsheet covers three of them. On the front page: read and parse text files including csv, tsv, or fwf with <a href="http://readr.tidyverse.org/">readr</a>. On the back page: read and write Excel spreadsheets with <a href="https://readxl.tidyverse.org/">readxl</a> and work with Google Sheets files with <a href="https://googlesheets4.tidyverse.org/">googlesheets4</a>. Updated August 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-import.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-import.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/data-import.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Apply functions with purrr cheatsheet </h2>
+<p>The <a href="https://purrr.tidyverse.org/">purrr</a> package makes it easy to work with lists and functions. This cheatsheet will remind you how to manipulate lists with purrr functions as well as how to apply functions iteratively to each element of a list or vector using map functions. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/purrr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/purrr.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/purrr.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> String manipulation with stringr cheatsheet </h2>
+<p>The <a href="http://stringr.tidyverse.org">stringr</a> package provides an easy to use toolkit for working with strings, i.e. character data, in R. This cheatsheet guides you through stringr&rsquo;s functions for manipulating strings. The back page provides a concise reference to <em>regular expressions</em>, a mini-language for describing, finding, and matching patterns in strings. Updated August 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/strings.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/strings.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Factors with forcats cheatsheet </h2> 
+<p>Factors are R’s data structure for categorical data. The <a href="https://forcats.tidyverse.org/">forcats</a> package makes it easy to work with factors. This cheatsheet reminds you how to make factors, reorder their levels, recode their values, and more. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/factors.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/factors.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Dates and times with lubridate cheatsheet </h2>
+<p>The <a href="http://lubridate.tidyverse.org">lubridate</a> package makes it easier to work with dates and times in R. This cheatsheet covers how to round dates, work with time zones, extract elements of a date or time, parse dates into R and more. The back of the cheatsheet describes lubridate&rsquo;s three timespan classes: periods, durations, and intervals; and explains how to do math with date-times. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/lubridate.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/lubridate.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/lubridate.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Dynamic documents with rmarkdown cheatsheet </h2>
+<p><a href="https://rmarkdown.rstudio.com/">R Markdown</a> is an authoring format that makes it easy to write reproducible reports with R. You combine your R code with narration written in markdown (an easy-to-write plain text format) and then export the results as an HTML, PDF, or Word file. You can even use R Markdown to build interactive documents and slide decks. Updated August 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rmarkdown.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rmarkdown.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/rmarkdown.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Interactive web apps with shiny cheatsheet </h2>
+<p>If you&rsquo;re ready to build interactive web apps with R, say hello to <a href="https://shiny.rstudio.com/">Shiny</a>. This cheatsheet provides a tour of the shiny package and explains how to build and customize an interactive app. Be sure to follow the links on the sheet for <a href="http://shiny.rstudio.com">even more information</a>. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/shiny.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/shiny.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/shiny.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> RStudio IDE cheatsheet </h2>
+<p>The <a href="https://www.rstudio.com/products/rstudio/">RStudio IDE</a> is the most popular integrated development environment for R. Do you want to write, run, and debug your own R code? Work collaboratively on R projects with version control? Build packages or create documents and apps? No matter what you do with R, the RStudio IDE can help you do it faster. This cheatsheet will guide you through the most useful features of the IDE, as well as the long list of keyboard shortcuts built into the RStudio IDE. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rstudio-ide.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/rstudio-ide.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Web APIs for R with plumber cheatsheet </h2> 
+<p>The <a href="https://www.rplumber.io/">plumber</a> package enables R developers to build web APIs. Plumber uses special R comments combined with standard R functions to create API endpoints. This cheatsheet provides everything you need to get started building APIs in R with Plumber. Updated March 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/plumber.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/plumber.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/plumber.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Python with R and reticulate cheatsheet </h2>
+<p>The <a href="https://rstudio.github.io/reticulate/index.html">reticulate</a> package provides a comprehensive set of tools for interoperability between Python and R. With reticulate, you can call Python from R in a variety of ways including importing Python modules into R scripts, writing R Markdown Python chunks, sourcing Python scripts, and using Python interactively within the RStudio IDE. This cheatsheet will remind you how. Updated August 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/reticulate.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/reticulate.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/reticulate.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Deep learning with Keras cheatsheet </h2>
+<p><a href="https://keras.io/">Keras</a> is a high-level neural networks API developed with a focus on enabling fast experimentation. Keras supports both convolution based networks and recurrent networks (as well as combinations of the two), runs seamlessly on both CPU and GPU devices, and is capable of running on top of multiple back-ends including <a href="https://github.com/tensorflow/tensorflow">TensorFlow</a>, <a href="https://github.com/Microsoft/cntk">CNTK</a>, and <a href="https://github.com/Theano/Theano">Theano</a>. Updated December 2017.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/keras.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/keras.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://d33wubrfki0l68.cloudfront.net/6bc66cf19cd1b0ecab027ab4db771f8bc4d67f28/15c2a/wp-content/uploads/2018/08/keras.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Data science in Spark with sparklyr cheatsheet </h2>
+<p>The <a href="http://spark.rstudio.com/">sparklyr</a> package provides an R interface to Apache Spark, a fast and general engine for processing Big Data. With sparklyr, you can connect to a local or remote Spark session, use dplyr to manipulate data in Spark, and run Spark&rsquo;s built-in machine learning algorithms. Updated October 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/sparklyr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/sparklyr.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://d33wubrfki0l68.cloudfront.net/df3decc083f71e4800784bb7d4a71fb3e4580c1a/9bc8b/wp-content/uploads/2018/08/sparklyr.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<h2 style="font-size: 2em"> Package development with devtools cheatsheet </h2>
+<p>The <a href="https://devtools.r-lib.org/">devtools</a> package makes it easy to build your own R packages, and packages make it easy to share your R code. Supplement this cheatsheet with <a href="http://r-pkgs.had.co.nz/">r-pkgs.had.co.nz</a>, Hadley&rsquo;s book on package development. Updated January 2015.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/package-development.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-5">
+<a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/package-development.pdf"> <img class="cheatsheet-img" style="width:100%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/package-development.png"></a>
+</div>
+</div>
+<div class="row pt-5">
+<div class="col-md-7">
+<hr>
+<h3 id="contributed-cheatsheets">Contributed Cheatsheets</h3>
+<p>These cheatsheets have been generously contributed by R users.</p>
+</div>
+</div>
+<div class="row pt-4">
+<div class="col-md-4 text-center">
+<h4 id="advanced-r">Advanced R</h4>
+<p><a href="https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/668a3fbd1b87e5086e95dfb679445a8333e4a4b4/73c41/wp-content/uploads/2015/01/advanced-r-1.png"></a>
+Environments, data structures, functions, subsetting and more, by Arianne Colton and Sean Chen. Updated February 2016.</p>
+<p><a href="https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="baser">Base R</h4>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/base-r.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/4e0edeb0b12f314d6df04daa0ac37db91ba6bd56/6803a/wp-content/uploads/2015/01/base-r-1.png"></a>
+Vectors, matrices, lists, data frames, functions and more in base R, by <a href="http://mhairihmcneill.com/">Mhairi McNeill</a>. Updated March 2015.</p>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/base-r.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="bayesplot">bayesplot</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/bayesplot.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/bayesplot.png"></a>
+Plotting for Bayesian Models in R, by Edward A. Roualdes. Updated May 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/bayesplot.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="bcea">BCEA</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/bcea.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/bcea.png"></a>
+Bayesian cost effective analysis in R, by Gianluca Baio. Updated February 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/bcea.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="caret">caret</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/caret.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/ad16acdb544c1a9ca00c7dd175312a52f45e8979/7e9a2/wp-content/uploads/2015/01/caret-cheatsheet.png"></a>
+Modeling and machine learning in R with the caret package, by Max Kuhn. Updated September 2017.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/caret.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="cartography">cartography</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/cartography.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/bffe4785e10d77eb5b122e654955be8029abca9d/ca943/wp-content/uploads/2018/08/cartography.png"></a>
+Thematic maps with spatial objects, by Timothée Giraud. Updated July 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/cartography.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="collapse">collapse</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/collapse.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/collapse.png"></a>
+Advanced and fast data transformation with R, by Sebastian Krantz. Updated July 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/collapse.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="datatable">data.table</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/datatable.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/e4288071d94ce24192edb9196eae7749acb6d726/83382/wp-content/uploads/2018/08/datatable.png"></a>
+Data manipulation with data.table, by Erik Petrovski. Updated January 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/datatable.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="declaredesign">DeclareDesign</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/declaredesign.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/28d9240dc094e8b2923b1ef44578f9a52add5e76/32c17/assets/img/declaredesign-400x309.png"></a>
+Tools to test research designs that use a MIDA framework. Updated April 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/declaredesign.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="distr6">distr6</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/distr6.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/distr6.png"></a>
+An object-oriented interface for probability distributions, by Raphael Sonabend. Updated August 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/distr6.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="estimatr">estimatr</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/estimatr.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/0ca3fbb89405f45389248e1033ebae5db557398e/77fb0/assets/img/estimatr-400x309.png"></a>
+Fast, robust <a href="https://declaredesign.org/r/estimatr/">estimators</a> for common models. Updated November 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/estimatr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="eurostat">eurostat</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/eurostat.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/f1964bcb6a4e7695759fc6eb01d284949a78839f/c090b/wp-content/uploads/2015/01/eurostat-cheatsheet-1.png"></a>
+R tools to access the eurostat database, by <a href="http://ropengov.org/">rOpenGov</a>. Updated November 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/eurostat.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="gganimate">gganimate</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/gganimate.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/gganimate.png"></a>
+Extend ggplot2&rsquo;s grammar of graphics with functions for animation, by Karl Hailperin. Updated May 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/gganimate.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="gwasrapidd">gwasrapidd</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/gwasrapidd.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/gwasrapidd.png"></a>
+Provides programmatic access to the NHGRI-EBI Catalog of published genome-wide association studies, by Ramiro Magno. Updated April 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/gwasrapidd.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="golem">golem</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/golem.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/golem.png"></a>
+A framework for building robust Shiny apps, by <a href="https://rtask.thinkr.fr/consultants-r-experts/">ThinkR</a>. Updated September 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/golem.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="h2o">h2o</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/h2o.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/1d52998e83f7dbe4d25178cace6c89b97f81ffd3/d37be/wp-content/uploads/2018/04/h2o-e1523978385886.png"></a>
+The R interface to h20&rsquo;s algorithms for big data and parallel computing, by Juan Telleria. Updated June 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/h2o.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="how-big-is-your-graph">How big is your graph?</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/how-big-is-your-graph.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/1afdc5f9548242723e9413379ec911a56bf0a31c/f8d4d/wp-content/uploads/2015/01/how-big-is-your-graph.png"></a>
+Graph sizing with base R, by <a href="http://blog.pmean.com/cheatsheets/">Stephen Simon</a>. Updated August 2017.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/how-big-is-your-graph.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="imputets">imputeTS</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/imputeTS.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/imputeTS.png"></a>
+Impute missing data in time series, by Steffen Moritz. Updated July 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/imputeTS.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="jfa">jfa</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/jfa.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/jfa.png"></a>
+Work with bayesian and classical statistical audit samples, by Koen Derks. Updated September 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/jfa.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="labelled">labelled</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/labelled.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/labelled.png"></a>
+Manipulate labelled data, by Joseph Larmarange. Updated June 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/labelled.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="latex">LaTeX</h4>
+<p><a href="https://wch.github.io/latexsheet/"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/78dd0d57fb9e19136289904bf4c571d246b0b6e8/e2d3b/wp-content/uploads/2018/01/latexsheet.png"></a>
+A reference to the LaTeX typesetting language, useful in combination with knitr and R Markdown, by Winston Chang. Updated January 2018.</p>
+<p><a href="https://wch.github.io/latexsheet/" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="leaflet">leaflet</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/leaflet.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/1267e8f809560bdbad86d15763be08302a471fb5/138a1/wp-content/uploads/2015/01/leaflet-cheatsheet-1.png"></a>
+Interactive maps in R with leaflet, by Kejia Shi. Updated May 2017.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/leaflet.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="machine-learning-modelling">Machine Learning Modelling</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/Machine%20Learning%20Modelling%20in%20R.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/1cebb09f25f8b5168017308e10895e1688019640/ae0e6/wp-content/uploads/2018/03/machine-learning-modelling-in-r.png"></a>
+A tabular guide to machine learning algorithms in R, by Arnaud Amsellem. Updated March 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/Machine%20Learning%20Modelling%20in%20R.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="mlr">mlr</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/mlr.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/e0f34ef394e0bc3d7d17a023fd30de7b92dfebb2/415a7/wp-content/uploads/2018/02/mlr.png"></a>
+The mlr package offers a unified interface to R&rsquo;s machine learning capabilities, by <a href="https://github.com/Prometheus77">Aaron Cooley</a>. Updated February 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/mlr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="mosaic">mosaic</h4>
+<p><a href="https://github.com/mlaviolet/Mosaic-cheatsheets/blob/main/mosaic-cheatsheet-gf.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/fe17298c71206547b0cee05ac4f86bddccc84e0a/b77ab/wp-content/uploads/2018/02/mosaic.png"></a>
+The <a href="http://www.mosaic-web.org/">mosaic package</a> is for teaching mathematics, statistics, computation and modeling, by Michael Laviolette. Updated June 2020.</p>
+<p><a href="https://github.com/mlaviolet/Mosaic-cheatsheets/blob/main/mosaic-cheatsheet-gf.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="nardl">nardl</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/nardl.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/37478d17079cad883c0260d53ab6713f29787406/bf5a6/assets/img/nardl.png"></a>
+The nardl package estimates the nonlinear cointegrating autoregressive distributed lag model, by Taha Zaghdoudi. Updated October 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/nardl.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="nimble">nimble</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/nimble.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/nimble.png"></a>
+Hierarchical statistical models that extend BUGS and JAGS, by the Nimble development team. Updated May 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/nimble.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="oscr">oSCR</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/oSCR.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/oSCR.png"></a>
+Work with Spatial Capture Recapture models, by Gabriella Palomo-Munoz.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/oSCR.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="overviewer">overvieweR</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/overviewR.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/overviewR.png"></a>
+Display descriptive information about a data set, by Cosima Meyer and Dennis Hammerschmidt. Updated August 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/overviewR.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="packagefinder">packagefinder</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/packagefinder.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/packagefinder.png"></a>
+Search CRAN with R, by Joachim Zuckarelli.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/packagefinder.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="parallel-computation">Parallel Computation</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/parallel_computation.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/9a39660d73d982fb0669867303653f6e9a343c60/40d54/assets/img/parallel_computation.png"></a>
+Parallel computing in R with the parallel, foreach, and future packages, by Ardalan Mirshani. Updated March 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/parallel_computation.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="quanteda">quanteda</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/quanteda.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/560cd18f1d48d738f7b8b32d6a1d4bccdbcbd3b4/ab668/wp-content/uploads/2015/01/quanteda.png"></a>
+Quantitative Analysis of Textual Data in R with the quanteda package, by Stefan Müller and Kenneth Benoit. Updated May 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/quanteda.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="quincunx">quincunx</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/quincunx.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/quincunx.png"></a>
+An R package to query, download, and wrangle PGS Catalog data, by Ramiro Magno. Updated November 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/quincunx.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="randomizr">randomizr</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/randomizr.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/9291e8b14dc5cacd35b5921a97cc155ef3a4e5f2/fb740/wp-content/uploads/2018/06/randomizr.png"></a>
+Automate random assignment and sampling with <a href="https://declaredesign.org/r/randomizr/">randomizr</a>, by Alex Coppock. Updated June 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/randomizr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="regular-expressions">Regular Expressions</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/df1ca0349befd6437cf13ecb255ca15e2db07a18/a8cb5/wp-content/uploads/2015/01/regular-expressions-1.png"></a>
+Basics of regular expressions and pattern matching in R, by Ian Kopacka. Updated July 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/regex.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="rphylopic">rphylopic</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rphylopic.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/rphylopic.png"></a>
+Add species&rsquo; silhouettes from phlopic to R plots, by Gabriela Palomo-Munoz.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/rphylopic.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="sas-r">SAS-R</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/sas-r.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/sas-r.png"></a>
+A guide to familiarise SAS users with R, and vice versa, by <a href="https://github.com/brendanjodowd/">Brendan O&rsquo;Dowd</a>. Updated September 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/sas-r.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="samplingstrata">SamplingStrata</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/SamplingStrata.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/SamplingStrata.png"></a>
+Optimal stratification for survey sampling, by Giulio Barcaroli. Updated January 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/SamplingStrata.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="simple-features-sf">Simple Features (sf)</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/sf.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/bad9d4b4657437c66290b2a3ce76eb7aa007e0b7/fd881/assets/img/sf.png"></a>
+Tools for working with spatial vector data: points, lines, polygons, etc, by Ryan Garnett. Updated December 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/sf.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="sjmisc">sjmisc</h4>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/sjmisc.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/fefe5108af29873677a04d002bafed889806fced/7aa0f/wp-content/uploads/2015/01/sjmisc-cheatsheet-1.png"></a>
+dplyr friendly data and variable transformation, by <a href="https://github.com/strengejacke">Daniel Lüdecke</a>. Updated February 2018.</p>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/sjmisc.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="slackr">slackr</h4>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/slackr.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/slackr.png"></a>
+Send files, messages, R objects, and images to Slack directly from R, by Daniel M. Villarreal. Updated March 2021.</p>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/slackr.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="stata2r">stata2r</h4>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/stata2r.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/stata2r.png"></a>
+Common translations from Stata to R, by Anthony Nguyen. Updated October 2019.</p>
+<p><a href="http://github.com/rstudio/cheatsheets/blob/main/stata2r.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="survminer">survminer</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/survminer.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/5caf7bce51b888e06902327f6d74a2ec4ab6b8da/05fd1/wp-content/uploads/2015/01/survminer-1.png"></a>
+Elegant survival plots, by Przemyslaw Biecek. Updated September 2021.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/survminer.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="syntax-comparison">Syntax Comparison</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/syntax.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/948e2a62a1eab719f3cad4763d74b383ed466acc/d4baa/wp-content/uploads/2018/02/syntax.png"></a>
+Three code styles compared: $, formula, and tidyverse, by <a href="http://www.science.smith.edu/~amcnamara/">Amelia McNamara</a>. Updated January 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/syntax.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="teach-r">Teach R</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/teachR.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/d314ebbd0225c071400590a3b2517fefe46f2278/c4c5c/assets/img/teachr-800x618.png"></a>
+Concise advice on how to teach R or anything else, by Adi Sarid. Updated March 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/teachR.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="time-series">Time Series</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/time-series.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/time-series.png"></a>
+A reference to time series in R, by Yunjun Xia and Shuyu Huang. Updated October 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/time-series.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="tsbox">tsbox</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tsbox.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/1edec3c0ec3748b38acbcaf3c396db1dcedbc697/d4e4d/assets/img/tsbox-800x618.png"></a>
+A time series toolkit for conversions, piping, and more, by Christoph Sax. Updated April 2019.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/tsbox.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="vegan">vegan</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/vegan.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/vegan.png"></a>
+Tools for descriptive community ecology, by Bruna L. Silva. Updated April 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/vegan.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">  
+<h4 id="vtree">vtree</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/vtree.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://raw.githubusercontent.com/rstudio/cheatsheets/main/pngs/vtree.png"></a>
+Visualize hierarchical subsets of data with variable trees, by Nick Barrowman. Updated July 2020.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/vtree.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-4 text-center">
+<h4 id="xplain">xplain</h4>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/xplain.pdf"> <img class="d-block mx-auto cheatsheet-img mt-3 mb-4" style="width:80%" src="https://d33wubrfki0l68.cloudfront.net/1211387e735d13abe17086960e59a4d3962e543f/8243a/wp-content/uploads/2018/05/xplain.png"></a>
+Explain statistical functions with XML files and xplain, by Joachim Zuckarelli. Updated May 2018.</p>
+<p><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/xplain.pdf" class="btn btn-primary">Download</a></p>
+</div>
+<div class="col-md-12">
+<hr>
+<h2 class="pb-4" id="translations">Translations</h2>
+<h4 id="bengali-translations---বল-অনবদ">Bengali Translations - বাংলা অনুবাদ</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/bengali/data-import_bn.pdf">Data import with readr, readxl, and googlesheets4</a> translated by Saif Kabir Asif. Updated September 2021.</li>
+</ul>
+<h4 id="chinesetranslations---中文翻译">Chinese Translations - 中文翻译</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/sparklyr_zh_cn.pdf">Data science in Spark with sparklyr</a> translated by Ke Zhang in Simplified Chinese and <a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/sparklyr_zh_tw.pdf">Traditional Chinese</a>. Updated December 2016.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/data-transformation_zh_cn.pdf">Data transformation with dplyr</a> translated by Aicen Yu in Simplified Chinese. Updated April 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/data-visualization_zh.pdf">Data visualization with ggplot2</a> translated by Guang-Teng Meng. Updated November 2021.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/tidyr_zh_cn.pdf">Data tidying with tidyr</a> translated by Feifan Wang. Updated November 2021.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/keras_zh_cn.pdf">Deep learning with Keras</a> translated by harryprince. Updated April 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/chinese/base-r_zh.pdf">Base R</a> translated by Fu Yongchao. Updated November 2021.</li>
+</ul>
+<h4 id="dutch-translations---nederlandse-vertaling">Dutch Translations - Nederlandse Vertaling</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/dutch/data-visualization_nl.pdf">Data visualization with ggplot2</a> translated by Gern Huijberts. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/dutch/data-wrangling_nl.pdf">Data wrangling</a> translated by Gern Huijberts. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/dutch/rmarkdown_nl.pdf">Dynamic documents with rmarkdown</a> translated by Gern Huijberts. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/dutch/package-development_nl.pdf">Package development with devtools</a> translated by Gern Huijberts. Updated May 2018.</li>
+</ul>
+<h4 id="french-translations---traductions-françaises">French Translations - Traductions Françaises</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/caret_fr.pdf">caret</a> translated by Ahmadou Dicko. Updated September 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/data-visualization_fr.pdf">Data visualization with ggplot2</a> translated by Vincent Guyader and Diane Beldame of ThinkR. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/data-wrangling_fr.pdf">Data wrangling</a> translated by Vincent Guyader and Diane Beldame of ThinkR. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/shiny_fr.pdf">Interactive web apps with shiny</a> translated by Vincent Guyader and Diane Beldame of ThinkR. May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/quanteda_fr.pdf">quanteda</a> translated by Ahmadou Dicko. Updated September 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/regex_fr.pdf">Regular expressions</a> translated by Ahmadou Dicko. Updated August 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/french/rstudio-ide_fr.pdf">RStudio IDE</a> translated by Vincent Guyader and Diane Beldame of ThinkR. Updated May 2018.</li>
+</ul>
+<h4 id="german-translations---deutsch-übersetzungen">German Translations - Deutsch Übersetzungen</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/base-r_de.pdf">Base R</a> translated by Annika Kies and Martin Kies from LeverageData. Updated April 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/sparklyr_de.pdf">Data science in Spark with sparklyr</a> translated by Ke Zhang. Updated March 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/data-transformation_de.pdf">Data transformation with dplyr</a> translated by Lucia Gjeltema of Research Triangle Analysts. Updated September 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/data-visualization_de.pdf">Data visualization with ggplot2</a> translated by Lucia Gjeltema of Research Triangle Analysts. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/rmarkdown_de.pdf">Dynamic documents with rmarkdown</a> translated by Lucia Gjeltema of Research Triangle Analysts. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/shiny_de.pdf">Interactive web apps with shiny</a> translated by Lucia Gjeltema of Research Triangle Analysts. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/german/package-development_de.pdf">Package development with devtools</a> translated by Lucia Gjeltema of Research Triangle Analysts. Updated May 2018.</li>
+</ul>
+<h4 id="greek-translations---ελληνικές-μεταφράσεις">Greek Translations - Ελληνικές μεταφράσεις</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/greek/base-r_el.pdf">Base R</a> translated by Kleanthis Koupidis, Charalampos Bratsas, and Open Knowledge Greece. Updated June 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/greek/rstudio-ide_el.pdf">RStudio IDE</a> translated by Kleanthis Koupidis, Charalampos Bratsas, and Open Knowledge Greece. Updated June 2018.</li>
+</ul>
+<h4 id="italiantranslations---traduzioni-italiane">Italian Translations - Traduzioni Italiane</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/italian/rmarkdown_it.pdf">Dynamic documents with rmarkdown</a> translated by Angelo Salatino of Knowledge Media Institute. Updated June 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/italian/package-development_it.pdf">Package development with devtools</a> translated by Angelo Salatino of Knowledge Media Institute. Updated June 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/italian/rstudio-ide_it.pdf">RStudio IDE</a> translated by Angelo Salatino of Knowledge Media Institute. Updated June 2018.</li>
+</ul>
+<h4 id="japanesetranslations---日本語翻訳">Japanese Translations - 日本語翻訳</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/base-r_ja.pdf">Base R</a> translated by Takeshi Sasayama. Updated June 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/sparklyr_ja.pdf">Data science in Spark with sparklyr</a> translated by Masato Takahashi. Updated March 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/data-visualization_ja.pdf">Data visualization with ggplot2</a> translated by Takeshi Sasayama. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/data-wrangling_ja.pdf">Data wrangling</a> translated by Tomoaki Masuda of the MIT Sloan Data Analytics Club. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/keras_ja.pdf">Deep learning with Keras</a> translated by Masato Takahashi. Updated March 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/rmarkdown_ja.pdf">Dynamic documents with rmarkdown</a> translated by Masato Takahashi. Updated March 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/factors_ja.pdf">Factors with forcats</a> translated by Taiyo Nakashima. Updated March 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/japanese/rstudio-ide_ja.pdf">RStudio IDE</a> translated by Masato Takahashi. Updated March 2018.</li>
+</ul>
+<h4 id="koreantranslations---한국어-로-번역">Korean Translations - 한국어 로 번역</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/korean/purrr_ko.pdf">Apply functions with purrr</a> translated by Victor Lee of xwMOOC. Updated November 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/korean/caret_ko.pdf">caret</a> translated by Victor Lee of xwMOOC. Updated September 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/korean/rmarkdown_ko.pdf">Dynamic documents with rmarkdown</a> translated by Victor Lee of xwMOOC. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/korean/package-development_ko.pdf">Package development with devtools</a> translated by Victor Lee of xwMOOC. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/korean/syntax_ko.pdf">Syntax comparison</a> translated by Victor Lee of xwMOOC. Updated February 2018.</li>
+</ul>
+<h4 id="persiantranslations--ترجمه-های-فارسی">Persian Translations - ترجمه های فارسی</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/persian/data-import_fa.pdf">Data import</a> translated by Vahid Faraji Jobehar and Reza Mazloomi. Updated March 2019.</li>
+</ul>
+<h4 id="portuguesetranslations--tradução-para-português">Portuguese Translations - tradução para português</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/portuguese/base-r_pt_br.pdf">Base R</a> translated by Samuel Carleial. Updated August 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/portuguese/caret_pt.pdf">caret</a> translated by Karen da Silva Lopes. Updated April 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/portuguese/data-visualization_pt.pdf">Data visualization with ggplot2</a> translated by Augusto Queiroz de Macedo. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/portuguese/data-wrangling_pt.pdf">Data wrangling</a> translated by Augusto Queiroz de Macedo. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/portuguese/datatable_pt_br.pdf">data.table</a> translated by Samuel Carleial. Updated August 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/portuguese/rstudio-ide_pt.pdf">RStudio IDE</a> translated by Augusto Queiroz de Macedo. Updated May 2018.</li>
+</ul>
+<h4 id="russiantranslations---переводы">Russian Translations - Переводы</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/russian/purrr_ru.pdf">Apply functions with purrr</a> translated by Evgeni Chasnovski of QuestionFlow. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/russian/data-import_ru.pdf">Data import</a> translated by Evgeni Chasnovski of QuestionFlow. Updated February 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/russian/data-transformation_ru.pdf">Data transformation with dplyr</a> translated by Evgeni Chasnovski of QuestionFlow. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/russian/lubridate_ru.pdf">Dates and times with lubridate</a> translated by Evgeni Chasnovski of QuestionFlow. Updated March 2018.</li>
+</ul>
+<h4 id="spanish-translations---traducciones-en-español">Spanish Translations - Traducciones en español</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/purrr_es.pdf">Apply functions with purrr</a> translated by Carlos Ortega of the Grupo de Usuarios de R de Madrid. Updated October 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/caret_es.pdf">caret</a> translated by Carlos Ortega of the Grupo de Usuarios de R de Madrid. Updated September 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/data-import_es.pdf">Data import</a> translated by Yanina Bellini Saibene. Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/sparklyr_es.pdf">Data science in Spark with sparklyr</a> translated by DaniPrina. Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/data-transformation_es.pdf">Data transformation with dplyr</a> translated by Frans van Dunné of ixpantia. Updated March 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/data-visualization_es.pdf">Data visualization with ggplot2</a> translated by Carolina Mengoni Goñalons. Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/lubridate_es.pdf">Dates and times with lubridate</a> translated by Yanina Bellini Saibene. Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/keras_es.pdf">Deep learning with Keras</a> translated by Carlos Ortega of the Grupo de Usuarios de R de Madrid. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/rmarkdown_es.pdf">Dynamic documents with rmarkdown</a> translated by Jessica Formoso. Updated January 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/rstudio-ide_es.pdf">Entorno de desarrollo RStudio</a> translated by Monica Alonso. Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/estadistica-descriptiva-con-R.pdf">Estadística descriptiva con R</a> translated by Rosana Ferraro of Máxima Formación. Updated June 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/factors_es.pdf">Factors with forcats</a> translated by Laura Acion. Updated January 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/shiny_es.pdf">Interactive web apps with shiny</a> translated by Frans van Dunné of ixpantia. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/introduccion-a-r.pdf">Introducción a R</a> translated by Rosana Ferraro of Máxima Formación. Updated June 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/package-development_es.pdf">Package development with devtools</a> translated by Paola Corrales. Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/reticulate_es.pdf">Python with R and reticulate</a> translated by Vanesa Maribel. Updated January 2020.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/strings_es.pdf">String manipulation with stringr</a> translated by Carlos Ortega of the Grupo de Usuarios de R de Madrid (updated by L. Paloma Rojas Saunero). Updated December 2019.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/survminer_es.pdf">survminer</a> translated by Maria Dermit. Updated March 2021.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/spanish/syntax_es.pdf">Syntax comparison</a> translated by Riva Quiroga. Updated June 2020.</li>
+</ul>
+<h4 id="turkish-translations---türkçe-çeviriler">Turkish Translations - Türkçe Çeviriler</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/base-r_tr.pdf">Base R</a> translated by Elif Kartal. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/caret_tr.pdf">caret</a> translated by İlkim Ecem Emre. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/data-import_tr.pdf">Data import</a> translated by Metin Yazici. Updated October 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/data-transformation_tr.pdf">Data transformation with dplyr</a> translated by Hazel kavılı and Berk Orbay. Updated February 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/data-visualization_tr.pdf">Data visualization with ggplot2</a> translated by Hazel kavılı and Berk Orbay. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/rmarkdown_tr.pdf">Dynamic documents with rmarkdown</a> translated by Metin Yazici. Updated February 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/shiny_tr.pdf">Interactive web apps with shiny</a> translated by Metin Yazici. Updated October 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/turkish/regex_tr.pdf">Regular expressions</a> translated by Zeki Özen. Updated January 2018.</li>
+</ul>
+<h4 id="ukrainian-translations---українські-переклади">Ukrainian Translations - українські переклади</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/ukrainian/purrr_uk.pdf">Apply functions with purrr</a> translated by Evgeni Chasnovski of QuestionFlow. Updated March 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/ukrainian/data-import_uk.pdf">Data import</a> translated by Evgeni Chasnovski of QuestionFlow. Updated February 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/ukrainian/data-transformation_uk.pdf">Data transformation with dplyr</a> translated by Evgeni Chasnovski of QuestionFlow. Updated January 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/ukrainian/lubridate_uk.pdf">Dates and times with lubridate</a> translated by Evgeni Chasnovski of QuestionFlow. Updated January 2018.</li>
+</ul>
+<h4 id="uzbek-translations---ozbek-tilidagi-tarjimalar">Uzbek Translations - O‘zbek tilidagi tarjimalar</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/uzbek/data-import_uz.pdf">Data import</a> translated by Alisher Suyunov. Updated August 2017.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/uzbek/data-transformation_uz.pdf">Data transformation with dplyr</a> translated by Alisher Suyunov. Updated August 2017.</li>
+</ul>
+<h4 id="vietnamese-translations--bản-dịch-tiếng-việt">Vietnamese Translations - Bản dịch tiếng Việt</h4>
+<ul>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/purrr_vi.pdf">Apply functions with purrr</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated July 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/base-r_vi.pdf">Base R</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/data-visualization_vi.pdf">Data visualization with ggplot2</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/data-wrangling_vi.pdf">Data wrangling</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/lubridate_vi.pdf">Dates and times with lubridate</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated July 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/rmarkdown_vi.pdf">Dynamic documents with rmarkdown</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/shiny_vi.pdf">Interactive web apps with shiny</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/package-development_vi.pdf">Package development with devtools</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated May 2018.</li>
+<li><a href="https://raw.githubusercontent.com/rstudio/cheatsheets/main/translations/vietnamese/strings_vi.pdf">String manipulation with stringr</a> translated by Anh Hoang Duc and Duc Pham of RAnalytics.vn. Updated July 2018.</li>
+</ul>
+</div>
+<div class="col-md-12 pb-5">
+<hr>
+<h3 id="previous-versions">Previous versions</h3>
+<p>To see version histories of the cheatsheets and translations, visit the <a href="https://github.com/rstudio/cheatsheets">Cheatsheet GitHub Repository</a>.</p>
+<h3 id="want-to-contribute">Want to contribute?</h3>
+<p>We accept high-quality cheatsheets and translations that are licensed under the Creative Commons <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license. Details and templates are available at <a href="https://github.com/rstudio/cheatsheets/blob/master/.github/CONTRIBUTING.md">How to Contribute a Cheatsheet</a>.</p>
+</div>
+
+  </div>   
+</div>
+
+
+
+        </div>
+      </div>
+      <footer class="footer footer-white footer-big">
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-lg-2 col-md-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <a class="desktop" href="/">
+                <img src="https://d33wubrfki0l68.cloudfront.net/62bcc8535a06077094ca3c29c383e37ad7334311/a263f/assets/img/logo.svg" style="width:100px;height:auto;margin-bottom:30px;" alt="RStudio, PBC">
+              </a>
+              <a class="mobile" href="https://bcorporation.net/directory/rstudio" target="_blank" rel="noopener noreferrer">
+                <img src="https://d33wubrfki0l68.cloudfront.net/9249ca7ba197318b488c0b295b94357694647802/6d33b/assets/img/logo-lockup.svg" style="width:180px;height:auto;margin-bottom:30px;" alt="RStudio, PBC">
+              </a>
+              <p>250 Northern Ave, Boston, MA 02210</p>
+              <p>844-448-1212</p>
+              <p><a href="mailto:info@rstudio.com" alt="Email RStudio"> info@rstudio.com</a></p>
+              <ul class="social-buttons d-inline">
+                <li>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/rstudio-pbc" class="btn btn-icon btn-neutral btn-linkedin btn-lg">
+                    <i class="fab fa-linkedin-in circle"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/rstudiopbc/" class="btn btn-icon btn-neutral btn-facebook btn-lg">
+                    <i class="fab fa-facebook-f circle"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/rstudio" class="btn btn-icon btn-neutral btn-twitter btn-lg">
+                    <i class="fab fa-twitter circle"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener noreferrer" href="https://github.com/rstudio" class="btn btn-icon btn-neutral btn-github btn-lg">
+                    <i style="font-size:19px;" class="fab fa-github circle"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-12 col-md-6 desktop">
+              <div>
+                <a href="/subscribe" class="btn btn-default btn-sm pl-2 pr-2" style="border: 1px solid #404040 !important;font-size:12px;text-transform: none;font-weight: 400;">Subscribe to updates</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 desktop">
+          <h5 class="footer-header">Products</h5>
+          <hr class="blue desktop">
+          <div class="">
+            <div class="row">
+              <div class="col-lg-12 col-6">
+                <p class="category">Open Source</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/rstudio/#rstudio-desktop">
+                      RStudio Desktop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/rstudio/#rstudio-server">
+                      RStudio Server
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/shiny/shiny-server/">
+                      Shiny Server
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/rpackages/">
+                      R Packages
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">Hosted Services</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/academy">
+                      RStudio Academy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/cloud/">
+                      RStudio Cloud
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://packagemanager.rstudio.com/">
+                      RStudio Public Package Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/shinyapps/">
+                      shinyapps.io
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-12 col-6">
+                <p class="category">Professional</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/team/">
+                      RStudio Team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/workbench/">
+                      RStudio Workbench
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/connect/">
+                      RStudio Connect
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/package-manager/">
+                      RStudio Package Manager
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 desktop">
+            <h5 class="footer-header">About RStudio</h5>
+          <hr class="blue">
+          <div class="">
+            <div class="row">
+              <div class="col-lg-6 col-6">
+                <p class="category">Learning</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="http://education.rstudio.com">
+                      Education
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/resources/">
+                      Videos &amp; Webinars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/resources/cheatsheets/">
+                      Cheatsheets
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/conference/">
+                      rstudio::conf
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">About Us</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/about/">
+                      About the Company
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/what-makes-rstudio-different/">
+                      What Makes Us Different
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/analyst-reports/">
+                      Analyst Reports
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/swag/">
+                      RStudio Swag
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/careers/">
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-6">
+                <p class="category">Support</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://support.rstudio.com/hc/en-us/categories/202638197-Frequently-Asked-Questions">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="/support/">
+                      RStudio Support
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://community.rstudio.com">
+                      RStudio Community
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/certified-partners/">
+                      Certified Partners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/product-security/">
+                      Product Security
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://docs.rstudio.com">
+                      RStudio Documentation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contact/">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/eula/">
+                      RStudio Legal Terms
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/subscription-management/">Email Subscription Management</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 desktop">
+          <h5 class="footer-header">Additional Websites</h5>
+          <hr class="blue">
+          <div class="">
+            <div class="row">
+              <div class="col-lg-6 col-6">
+                <p class="category">Analyse &amp; Explore</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.tidyverse.org/">
+                      Tidyverse
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://ggplot2.tidyverse.org/">
+                      ggplot2
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://dplyr.tidyverse.org/">
+                      dplyr
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://tidyr.tidyverse.org/">
+                      tidyr
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://purrr.tidyverse.org/">
+                      purrr
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">Communicate &amp; Interact</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="http://shiny.rstudio.com/">
+                      Shiny
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://rmarkdown.rstudio.com/">
+                      rmarkdown
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://rmarkdown.rstudio.com/flexdashboard/">
+                      flexdashboard
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-6">
+                <p class="category">Connect &amp; Integrate</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/drivers/">
+                      Professional Drivers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/launcher-plugin-sdk/">
+                      Launcher Plugin SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://db.rstudio.com/">
+                      Databases
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://environments.rstudio.com/">
+                      Environments
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://spark.rstudio.com/">
+                      Sparklyr
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.rplumber.io/">
+                      Plumber
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://rstudio.github.io/reticulate/">
+                      Reticulate
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="http://ursalabs.org/">
+                      Ursa Labs
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">Model &amp; Predict</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://tensorflow.rstudio.com/">
+                      Tensorflow
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.tidymodels.org/">
+                      Tidymodels
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://spark.rstudio.com/mlib/">
+                      Spark MLib
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mobile" id="accordianFooter">
+          <hr class="blue">
+          <a class="" data-toggle="collapse" data-target="#products" aria-expanded="false" aria-controls="products">
+            <h5 class="footer-header">Products</h5>
+          </a>
+          <div class="collapse" data-parent="#accordianFooter" id="products">
+            <div class="row">
+              <div class="col-lg-12 col-6">
+                <p class="category">Open Source</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/rstudio/#rstudio-desktop">
+                      RStudio Desktop
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/rstudio/#rstudio-server">
+                      RStudio Server
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/shiny/shiny-server/">
+                      Shiny Server
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/rpackages/">
+                      R Packages
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">Hosted Services</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/cloud/">
+                      RStudio Cloud
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://packagemanager.rstudio.com/">
+                      RStudio Public Package Manager
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/shinyapps/">
+                      shinyapps.io
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-12 col-6">
+                <p class="category">Professional</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/team/">
+                      RStudio Team
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/workbench/">
+                      RStudio Workbench
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/connect/">
+                      RStudio Connect
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/package-manager/">
+                      RStudio Package Manager
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="blue">
+          <a class="" data-toggle="collapse" data-target="#aboutRStudio" aria-expanded="false" aria-controls="aboutRStudio">
+            <h5 class="footer-header">About RStudio</h5>
+
+          </a>
+          <div class="collapse" id="aboutRStudio" data-parent="#accordianFooter" >
+            <div class="row">
+              <div class="col-lg-6 col-6">
+                <p class="category">Learning</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="http://education.rstudio.com">
+                      Education
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/resources/">
+                      Videos &amp; Webinars
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/subscription-management/">Email Subscription Management</a>
+                  </li>
+                  <li>
+                    <a href="/resources/cheatsheets/">
+                      Cheatsheets
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/conference/">
+                      rstudio::conf
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">About Us</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/about/">
+                      About the Company
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/what-makes-rstudio-different/">
+                      What Makes Us Different
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/analyst-reports/">
+                      Analyst Reports
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/swag/">
+                      RStudio Swag
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/careers/">
+                      Careers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-6">
+                <p class="category">Support</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://support.rstudio.com/hc/en-us/categories/202638197-Frequently-Asked-Questions">
+                      Frequently Asked Questions
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/support">
+                      RStudio Support
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://community.rstudio.com">
+                      RStudio Community
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/certified-partners/">
+                      Certified Partners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/product-security/">
+                      Product Security
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://docs.rstudio.com">
+                      RStudio Documentation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/contact/">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/eula/">
+                      RStudio Legal Terms
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/about/subscription-management/">Email Subscription Management</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr class="blue">
+          <a class="" data-toggle="collapse" data-target="#additionalWebsites" aria-expanded="false" aria-controls="additionalWebsites">
+            <h5 class="footer-header">Additional Websites</h5>
+          </a>
+          <div class="collapse" id="additionalWebsites" data-parent="#accordianFooter">
+            <div class="row">
+              <div class="col-lg-6 col-6">
+                <p class="category">Analyse &amp; Explore</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.tidyverse.org/">
+                      Tidyverse
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://ggplot2.tidyverse.org/">
+                      ggplot2
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://dplyr.tidyverse.org/">
+                      dplyr
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://tidyr.tidyverse.org/">
+                      tidyr
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://purrr.tidyverse.org/">
+                      purrr
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">Communicate &amp; Interact</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="http://shiny.rstudio.com/">
+                      Shiny
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://rmarkdown.rstudio.com/">
+                      rmarkdown
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://rmarkdown.rstudio.com/flexdashboard/">
+                      flexdashboard
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-6">
+                <p class="category">Connect &amp; Integrate</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a href="/products/drivers/">
+                      Professional Drivers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/products/launcher-plugin-sdk/">
+                      Launcher Plugin SDK
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://db.rstudio.com/">
+                      Databases
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://spark.rstudio.com/">
+                      Sparklyr
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.rplumber.io/">
+                      Plumber
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://rstudio.github.io/reticulate/">
+                      Reticulate
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="http://ursalabs.org/">
+                      Ursa Labs
+                    </a>
+                  </li>
+                </ul>
+                <p class="category">Model &amp; Predict</p>
+                <ul class="links-vertical">
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://tensorflow.rstudio.com/">
+                      Tensorflow
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.tidymodels.org/">
+                      Tidymodels
+                    </a>
+                  </li>
+                  <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://spark.rstudio.com/mlib/">
+                      Spark MLib
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr class="blue mobile">
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center h-100 no-gutters">
+      <div class="col-md-1 desktop text-center text-md-left">
+        <a href="https://bcorporation.net/directory/rstudio" target="_blank" rel="noopener noreferrer"><img class="blab-logo" src="https://d33wubrfki0l68.cloudfront.net/30ef84abbbcfbd7b025671ae74131762844e90a1/3392d/assets/img/bcorps-logo.svg" alt="RStudio, PBC."></a>
+      </div>
+      <div class="col-md-11 text-center text-md-left">
+        <div class="legal">
+          <p class="pl-0"><a href="/about/eula/">Legal Terms</a></p> | <p><a href="/about/dmca-policy/">DMCA</a></p> | <p><a href="/about/trademark/">Trademark</a></p> | <p><a href="/about/privacy-policy/">Privacy Policy</a></p> | <p><a href="/about/ECCN/">ECCN</a></p>
+          <span class="mobile">
+            <p class="pl-0"><a href="/about/subscription-management/">Manage your Email Subscriptions</a></p>
+          </span>
+        </div>
+        <div class="copyright text-center text-md-left">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear())
+      </script> RStudio, PBC. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="rstudio-search-box"></div>
+
+
+      
+    </div>
+  </body>
+
+
+<script src='https://d33wubrfki0l68.cloudfront.net/bundles/92c48114d27f72fc24aee59effcefba42bcd2aa0.js' type='text/javascript'></script>
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+
+
+
+
+<script src='https://d33wubrfki0l68.cloudfront.net/js/54833fc3df61f57b493d27ad5c7d7967934095ec/assets/js/plugins/bootstrap-lightbox.js' type='text/javascript'></script>
+<script src='https://d33wubrfki0l68.cloudfront.net/bundles/8553e32c4c9b6f4262fd9ca9ae6313f01600a369.js'></script>
+
+<script src='https://d33wubrfki0l68.cloudfront.net/js/bce9cdec575a3eb8f6a7324e290fd3af20637d50/assets/js/plugins/moment.min.js' type='text/javascript'></script>
+<script src='https://d33wubrfki0l68.cloudfront.net/js/ac63cb9cceac1e33f9c037bd71478f23242d7267/assets/js/plugins/bootstrap-datetimepicker.js'></script>
+
+
+
+
+
+<script type="text/javascript">
+  
+    
+
+    function scrollToDownload() {
+
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+</script>
+    
+
+
+      
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+      </script>
+    
+
+    
+
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+
+
+
+<script src='https://d33wubrfki0l68.cloudfront.net/js/88688024f5cf48e4f94dae46cbacbbad12ddd573/assets/js/algolia.js' type='text/javascript'></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    
+
+
+
+    
+
+    $('[data-toggle=searchFormOpen]').click(function() {
+      $('.st-search-container').fadeIn();
+      setTimeout(function(){
+        $('#searchInputText').focus();
+      });
+    });
+
+    $('[data-toggle=searchFormClose]').click(function() {
+      $('.st-search-container').fadeOut()
+    });
+
+    function closeSwiftSearchMenuBar(event) {
+        if($('.st-search-container').is(":visible")) {
+          
+          if($(event.target).closest('.st-default-autocomplete').length === 0) {
+            $('.st-search-container').fadeOut();
+          }
+        }
+    }
+
+    $(document).click(function(event) {
+      if($(event.target).closest('.st-search-container').length === 0 && $(event.target).closest('[data-toggle=searchFormOpen]').length === 0) {
+        closeSwiftSearchMenuBar(event);
+      }
+    });
+
+    $(document).keydown(function(event) {
+      
+      if (event.keyCode == 27) {
+        closeSwiftSearchMenuBar(event);
+      }
+    });
+
+    
+
+    $('.mobile-menu-parent-anchor').on("click", function() {
+      $('#collapseOpenSource').collapse('hide');
+      $('#collapsehosted').collapse('hide');
+      $('#collapseprofessional').collapse('hide');
+    });
+
+
+    
+
+    function toggleDropdown (e) {
+      const _desktopDropdown = $(e.target).closest('.desktop-dropdown-hover'),
+        _desktopMenu = $('.dropdown-menu', _desktopDropdown);
+      setTimeout(function(){
+        const shouldOpen = e.type !== 'click' && _desktopDropdown.is(':hover');
+        _desktopMenu.toggleClass('show', shouldOpen);
+        _desktopDropdown.toggleClass('show', shouldOpen);
+        $('[data-toggle="dropdown"]', _desktopDropdown).attr('aria-expanded', shouldOpen);
+      }, e.type === 'mouseleave' ? 0 : 0);
+    }
+
+    $('body')
+      .on('mouseenter mouseleave','.desktop-dropdown-hover',toggleDropdown)
+      .on('click', '.desktop-dropdown-menu-hover a', toggleDropdown);
+
+    
+
+    $(".scrolling-anchor-link").click(function(event) {
+      event.preventDefault();
+      var anchorId = $(this).attr("href");
+      $('html,body').animate({scrollTop: $(anchorId).offset().top},'slow');
+    });
+
+    $('[data-ls-toggle="popover"]').popover({
+        placement : 'left',
+        html : true,
+        title : 'SHA-256 <a style="margin-top: -5px; font-size: 1.3rem; color: white;" href="#" class="close" data-dismiss="alert">&times;</a>'
+    });
+    $(document).on("click", ".popover .close" , function(){
+        $(this).parents(".popover").popover('hide');
+    });
+  });
+</script>
+
+<script type="text/javascript">
+$(function(){
+    var $el = $('.parallax-bg');
+    if ($el.length == 0) {
+        return;
+    }
+    $(window).scroll(function () {
+        para($el);
+    });
+    para($el);
+});
+var speed = .8;
+function para($el) {
+    var diff = $(window).scrollTop() - $el.offset().top;
+    var yPos = -(diff * speed);
+    var coords = '50%' + yPos + 'px';
+    $el.css({
+        backgroundPosition: coords
+    });
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+
+
+if (navigator.platform.indexOf("Mac") >= 0) {
+    document.body.classList.add("os-macintosh");
+} else if (navigator.userAgent.indexOf("Win") >= 0) {
+    document.body.classList.add("os-windows");
+} else if (navigator.userAgent.indexOf("Linux") >= 0) {
+    document.body.classList.add("os-linux");
+} else {
+    document.body.classList.add("os-unknown");
+}
+</script>
+<script type="text/javascript">
+function addNoOpener(link) {
+  let linkTypes = (link.getAttribute('rel') || '').split(' ');
+  if (!linkTypes.includes('noopener')) {
+    linkTypes.push('noopener');
+  }
+  link.setAttribute('rel', linkTypes.join(' ').trim());
+}
+
+function addNewTabMessage(link) {
+  if (!link.querySelector('.screen-reader-only')) {
+    link.insertAdjacentHTML('beforeend', '<span class="screen-reader-only">(opens in a new tab)</span>');
+  }
+}
+
+document.querySelectorAll('a[target="_blank"]').forEach(link => {
+  addNoOpener(link);
+  addNewTabMessage(link);
+});
+</script>
+</html>

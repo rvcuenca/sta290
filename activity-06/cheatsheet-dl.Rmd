@@ -1,0 +1,33 @@
+```{r}
+library(tidyverse)
+library(xml2)
+library(rvest)
+```
+
+```{r}
+readLines("cheatsheets/source/RStudio Cheatsheets - RStudio.html")
+```
+
+
+
+```{r warning=FALSE}
+read_html("cheatsheets/source/RStudio Cheatsheets - RStudio.html") %>% 
+  str_extract_all("https\\://raw\\.githubusercontent\\.com/rstudio/cheatsheets/main/(?!pngs|translations).*\\.pdf") %>% 
+  unlist %>% 
+  writeLines("dl_list.txt")
+  {
+    xx <- .
+    
+    for (k in 1:length(xx)) {
+      
+    }
+  }
+```
+
+```{r}
+readLines("dl_list.txt") %>% 
+  unique
+```
+
+
+
