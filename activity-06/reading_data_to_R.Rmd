@@ -1,0 +1,52 @@
+---
+title: Data import with the tidyverse
+date: June 29, 2022
+output: pdf_document
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+# Read Tabular Data with `readr`
+
+
+
+```{r}
+file_dt <- readr::read_delim(file = "file.csv", delim = ",")
+file_dt
+```
+
+
+```{r}
+# library(readr)
+readr::read_csv(file = "file.csv", col_names = c("C1","C2","C3"))
+```
+
+```{r}
+readr::read_csv2("file.csv", col_names = c("C1","C2","C3"))
+```
+
+
+
+```{r}
+readr::read_csv(c("data/f1.csv","data/f2.csv"))
+```
+
+
+```{r}
+c("data/f1.csv","data/f2.csv")
+```
+
+```{r}
+library(tidyverse)
+
+fnames <- list.files("data", pattern = "\\.csv$")
+
+files_to_combine <- stringr::str_c("data/",fnames)
+```
+
+```{r}
+files_to_combine
+readr::read_csv(file = files_to_combine, id="filenames")
+```
