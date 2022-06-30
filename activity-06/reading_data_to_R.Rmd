@@ -10,13 +10,10 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 
 # Read Tabular Data with `readr`
 
-
-
 ```{r}
-file_dt <- readr::read_delim(file = "file.csv", delim = ",")
+file_dt <- readr::read_delim(file = "file.csv", delim = ";")
 file_dt
 ```
-
 
 ```{r}
 # library(readr)
@@ -27,12 +24,9 @@ readr::read_csv(file = "file.csv", col_names = c("C1","C2","C3"))
 readr::read_csv2("file.csv", col_names = c("C1","C2","C3"))
 ```
 
-
-
 ```{r}
 readr::read_csv(c("data/f1.csv","data/f2.csv"))
 ```
-
 
 ```{r}
 c("data/f1.csv","data/f2.csv")

@@ -1,0 +1,54 @@
+---
+title: Data tidying with tidyr
+date: June 30, 2022
+output: pdf_document
+---
+
+# Creating Tibbles (column-wise creation)
+
+If we use `data.frame`, 
+
+```{r}
+my_df <- data.frame(
+  A = c(1,4) , 
+  B = c(2,5) , 
+  C = c(3,NA) 
+)
+my_df
+```
+
+```{r}
+my_tibble <- tibble::tibble(
+  A = c(1,4) , 
+  B = c(2,5) , 
+  C = c(3,NA) 
+)
+my_tibble
+```
+# Creating Tribbles (row-wise creation)
+
+```{r}
+tibble::tribble(
+  ~A, ~B, ~C,
+  1,  2,  3,
+  4,  5,  NA
+)
+```
+
+# Converting `data.frames` to `tibbles`
+
+```{r}
+mtcars
+tibble::as_tibble(mtcars, rownames = 'cars')
+```
+
+# Data Reshaping
+
+## Activity 1
+
+country 1999 2000
+A       0.7K 2K
+B       37K  80K
+C       212K 213K
+
+ 1. Create an R table from the above output using `data.frame`, `tibble`, and `tribble`
